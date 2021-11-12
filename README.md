@@ -1,3 +1,25 @@
+```
+brew upgrade unikube-cli
+k3d cluster ls
+wget -q -O - https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=v4.4.8 bash
+k3d cluster list
+k3d cluster delete unikube-buzzword-charts
+unikube project up
+unikube deck install
+watch unikube app list --deck buzzword-counter
+unikube project down
+unikube project prune
+unikube login
+unikube project up buzzy
+unikube deck install
+kubectl get pods
+unikube app list
+unikube deck ingress
+unikube app shell
+unikube project down    
+unikube project prune
+```
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/unikubehq/cli/main/logo_cli.png" width="400">
 </p>
